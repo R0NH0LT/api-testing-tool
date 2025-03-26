@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>API Testing Tool</title>
+</head>
+<body>
+    <nav>
+        <h1>API Testing Tool</h1>
+    </nav>
+    <button id="newWorkOrderButton">New Work Order</button>
+    <div id="workOrderForm" style="display: none;">
+        <div class="workOrderData">
+            <label for="workOrderTitle">Work Order Title</label>
+            <input type="text" id="workOrderTitle" placeholder="Title">
+        </div>
+        <div class="workOrderData">
+            <label for="assetOrLocation">Asset or Location</label>
+            <select name="assetOrLocation" id="assetOrLocation">
+                <option value="select" selected>--select--</option>
+                <option value="asset">Asset</option>
+                <option value="location">Location</option>
+            </select>
+        </div>
+        <div class="workOrderData" style="display: none;" id="assetNameDiv">
+            <label for="assetName">Asset Name</label>
+            <select name="assetName" id="assetName">
+                <option value="select" selected>--select--</option>
+                <option value="asset1">Asset 1</option>
+                <option value="asset2">Asset 2</option>
+                <option value="asset3">Asset 3</option>
+                <option value="asset4">Asset 4</option>
+                <option value="asset5">Asset 5</option>
+            </select>
+        </div>
+        <div class="workOrderData" style="display: none;" id="locationNameDiv">
+            <label for="locationName">Location Name</label>
+            <select name="locationName" id="locationName">
+                <option value="select" selected>--select--</option>
+                <option value="location1">Location 1</option>
+                <option value="location2">Location 2</option>
+                <option value="location3">Location 3</option>            
+            </select>
+        </div>
+        <div class="workOrderData">
+            <label for="workType">Work Type</label>
+            <select name="workType" id="workType">
+                <option value="select" selected>--select--</option>
+                <option value="CM">Corrective Maintnence</option>
+                <option value="RM">Reactive Maintnence</option>
+                <option value="PM">Preventive Maintnence</option>
+                <option value="PdM">Predictive Maintnence</option>
+                <option value="PI">Process Improvement</option>
+            </select>
+        </div>
+        <div class="workOrderData">
+            <label for="userName">User Name</label>
+            <select name="userName" id="userName">
+                <option value="select" selected>--select--</option>
+                <option value="benPickel">Ben Pickel</option>
+                <option value="chuckCastle">Chuck Castle</option>
+                <option value="coltenLange">Colten Lange</option>
+                <option value="darrellKnutzen">Darrell Knutzen</option>
+                <option value="daveSnowden">Dave Snowden</option>
+                <option value="frankKuplent">Frank Kuplent</option>
+                <option value="jakeSmit">Jake Smit</option>
+                <option value="jasonCatrain">Jason Catrain</option>
+                <option value="joshBurleson">Josh Burleson</option>
+                <option value="kevinGreen">Kevin Green</option>
+                <option value="leeHall">Lee Hall</option>
+                <option value="lukeBiondolillo">Luke Biondolillo</option>
+                <option value="markHoekstra">Mark Hoekstra</option>
+                <option value="ninoDoder">Nino Doder</option>
+                <option value="romanSimshauser">Roman Simshauser</option>
+                <option value="ronnieHolt">Ronnie Holt</option>
+                <option value="samRios">Sam Rios</option>
+                <option value="stefanFiorucci">Stefan Fiorucci</option>
+                <option value="steveHull">Steve Hull</option>
+                <option value="thomMiles">Thom Miles</option>
+                <option value="travisTjoelker">Travis Tjoelker</option>
+                <option value="vladimirBarbin">Vladimir Barbin</option>
+                <option value="wayneLand">Wayne Land</option>
+            </select>
+        </div>
+        <button id="submit" >Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
