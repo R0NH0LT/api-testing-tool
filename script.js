@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("locationName").value = "select";
     document.getElementById("workType").value = "select";
     document.getElementById("userName").value = "select";
+    document.getElementById("assetNameDiv").style.display = "none";
+    document.getElementById("locationNameDiv").style.display = "none";
 });
 
 document.getElementById("newWorkOrderButton").addEventListener("click", function() {
